@@ -1,5 +1,5 @@
 // API base URL
-const API_URL = '/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
 
 // Helper function to make API calls
 const apiCall = async (endpoint, options = {}) => {
